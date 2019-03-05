@@ -2,6 +2,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+// 导入logger
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
@@ -29,7 +30,7 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler
+// error 的 handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
