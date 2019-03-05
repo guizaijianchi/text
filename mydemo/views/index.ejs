@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+   <div>
+     <h2>文章管理</h2>
+     <ul>
+       <li><a href="/list">文章列表</a></li>
+       <li><a href="#">文章显示</a></li>
+     </ul>
+   </div>
+   <div>
+    <h2>用户管理</h2>
+    <ul>
+      <li><a href="/users/list">用户列表</a></li>
+      <li><a href="/users/show">用户显示</a></li>
+    </ul>
+   </div>
+   <div>
+    <h2>分类管理</h2>
+    <ul>
+      <li><a href="/cate/list">分类列表</a></li>
+      <li><a href="/cate/show">分类显示</a></li>
+    </ul>
+   </div>
+   <div>
+     <h2>response 的方法</h2>
+     <ul>
+       <li><a href="/demo1">response 的方法 res.send()</a></li>
+       <li><a href="/demo2">response 的方法 res.render()</a></li>
+       <li><a href="/demo3">response 的方法 res.redirect()</a></li>
+       <li><a href="/demo4">response 的方法 res.json()</a></li>
+     </ul>
+   </div>
+   <div>
+     <h2>request 的方法传值</h2>
+     <ul>
+       <li><a href="/demo5/tom/18">request 的属性 req.params</a></li>
+       <li><a href="/demo6?pass=123&user=alice&age=22"</li>
+       <li><a href="/login">登录操作--request 的属性 req.body</a></li>
+     </ul>
+   </div>
+  </body>
+</html>
